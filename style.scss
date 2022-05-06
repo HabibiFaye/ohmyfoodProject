@@ -1,6 +1,6 @@
 @import "variable";
 @import "mixin";
-body {
+* {
     box-sizing: border-box
 }
 
@@ -9,12 +9,21 @@ body {
     background: #f7f7f7;
     box-shadow: 1px 1px 2px 1px rgba(230, 225, 225, 0.824);
     border: none;
+    .entete__img {
+        border: 1px solid #000;
+        width: 100%;
+        text-align: center;
+    }
     .entete--couleur {
         background: #dedede;
         font-weight: bolder;
         width: 100%;
-        text-align: center;
         font-size: 25px;
+        @include flex-center;
+        flex-direction: row;
+    }
+    .entete__marge {
+        margin-left: 10px;
     }
     .titre {
         font-size: 50px;
@@ -29,7 +38,7 @@ body {
         height: 55px;
         width: 300px;
         text-align: center;
-        padding-top: 30px;
+        padding-top: 15px;
         border-radius: 45px;
         color: white;
         font-weight: bolder;
@@ -50,6 +59,8 @@ body {
         background: #fdfcfc;
         box-shadow: 1px 1px 1px 2px rgb(236, 234, 234);
         border-radius: 20px;
+        display: flex;
+        justify-content: space-around;
     }
     .navigation__modifier {
         font-weight: bolder;
@@ -80,8 +91,17 @@ section {
                 img {
                     width: 99%;
                     height: 250px;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                    padding-left: 3px;
+                    padding-top: -50px;
                 }
             }
         }
     }
+}
+
+footer {
+    background: rgb(66, 63, 63);
+    color: white;
 }
