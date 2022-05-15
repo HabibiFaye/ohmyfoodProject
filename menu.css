@@ -6,16 +6,68 @@ body {
     border: 1px solid #000; }
     body header .petite-entete {
       display: flex;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      align-items: center; }
+    body header a {
+      margin-left: 30px; }
+      body header a .fa-arrow-left {
+        font-size: 25px;
+        color: #000; }
     body header .logo {
-      width: 50%;
+      width: 30%;
       margin: auto;
-      text-align: center; }
+      text-align: center;
+      margin-top: 10px; }
+      body header .logo img {
+        height: 30px; }
     body header .img {
       width: 100%;
       margin: auto; }
       body header .img img {
         height: 25em;
         width: 100%; }
+  body section {
+    border: none;
+    background: #f2f2f2;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    position: relative;
+    bottom: 45px;
+    box-shadow: 1px 1px 1px 2px #f2f2f2;
+    padding-bottom: 30px; }
+    body section .btn {
+      width: 150px;
+      height: 50px;
+      align-self: center;
+      border-radius: 25px;
+      background: #FF79DA;
+      border: none;
+      color: white;
+      font-weight: bolder;
+      margin-top: 20px; }
+    body section .bloc__section {
+      display: flex;
+      justify-content: space-evenly; }
+      body section .bloc__section .entree {
+        width: 30%; }
+        body section .bloc__section .entree .titre {
+          border-bottom: 3px solid #000;
+          width: 30px;
+          padding-bottom: 5px;
+          border-color: #99E2D0; }
+        body section .bloc__section .entree .entree--blocEntree {
+          background: white;
+          border-radius: 20px;
+          box-shadow: 1px 1px 2px 1px #f6f6f6;
+          display: flex;
+          margin-bottom: 10px;
+          justify-content: space-between;
+          padding-left: 10px;
+          position: relative; }
+          body section .bloc__section .entree .entree--blocEntree .euro {
+            padding-top: 15px; }
 
 /*# sourceMappingURL=menu.css.map */

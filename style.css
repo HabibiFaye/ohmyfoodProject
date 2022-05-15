@@ -1,3 +1,6 @@
+body {
+  margin: 0; }
+
 * {
   box-sizing: border-box; }
 
@@ -10,7 +13,6 @@
   box-shadow: 1px 1px 2px 1px rgba(230, 225, 225, 0.824);
   border: none; }
   .entete .entete__img {
-    border: 1px solid #000;
     width: 100%;
     text-align: center; }
   .entete .entete--couleur {
@@ -57,7 +59,6 @@
     border-radius: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
     border: none; }
     .navigation .navigation--choix .fa-1,
     .navigation .navigation--choix .fa-2,
@@ -70,26 +71,25 @@
       width: 50px;
       border-radius: 100%;
       text-align: center;
-      padding-top: 10px; }
+      padding-top: 10px;
+      position: relative;
+      left: -25px; }
     .navigation .navigation--choix .fas-size {
       font-size: 30px;
-      color: #949191;
-      position: relative;
-      right: 30px; }
+      color: #949191; }
   .navigation .navigation__modifier {
     font-weight: bolder;
     font-size: 25px;
-    position: relative;
-    right: 50px; }
+    margin-left: 30px; }
   .navigation h1 {
-    font-size: 35px;
     align-self: flex-start;
     margin-top: 40px; }
 
 section {
   background: #f7f7f7;
   margin-top: 40px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 2px 2px #f5f5f5; }
   section h2 {
     margin-left: 20px; }
   section .section {
@@ -98,7 +98,7 @@ section {
     justify-content: center;
     margin-top: 30px; }
     section .section .section__boite {
-      width: 35%;
+      width: 30%;
       margin-bottom: 60px;
       background: white;
       border-radius: 20px;
@@ -140,7 +140,8 @@ footer {
   background: #333232;
   display: flex;
   justify-content: space-around;
-  color: white; }
+  color: white;
+  width: 100%; }
   footer .footer--box {
     display: flex;
     align-items: center; }

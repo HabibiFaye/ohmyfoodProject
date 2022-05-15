@@ -1,3 +1,5 @@
+@import "variable";
+@import "mixin";
 body {
     box-sizing: border-box;
     margin: 0;
@@ -7,11 +9,23 @@ body {
         .petite-entete {
             display: flex;
             margin-bottom: 10px;
+            align-items: center;
+        }
+        a {
+            margin-left: 30px;
+            .fa-arrow-left {
+                font-size: 25px;
+                color: #000;
+            }
         }
         .logo {
-            width: 50%;
+            width: 30%;
             margin: auto;
             text-align: center;
+            margin-top: 10px;
+            img {
+                height: 30px;
+            }
         }
         .img {
             width: 100%;
@@ -19,6 +33,56 @@ body {
             img {
                 height: 25em;
                 width: 100%;
+            }
+        }
+    }
+    section {
+        border: none;
+        background: #f2f2f2;
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        position: relative;
+        bottom: 45px;
+        box-shadow: 1px 1px 1px 2px #f2f2f2;
+        padding-bottom: 30px;
+        .btn {
+            width: 150px;
+            height: 50px;
+            align-self: center;
+            border-radius: 25px;
+            background: $secondary-Color;
+            border: none;
+            color: white;
+            font-weight: bolder;
+            margin-top: 20px;
+        }
+        .bloc__section {
+            display: flex;
+            justify-content: space-evenly;
+            .entree {
+                width: 30%;
+                .titre {
+                    border-bottom: 3px solid #000;
+                    width: 30px;
+                    padding-bottom: 5px;
+                    border-color: $color-vert;
+                }
+                .entree--blocEntree {
+                    background: white;
+                    border-radius: 20px;
+                    box-shadow: 1px 1px 2px 1px #f6f6f6;
+                    display: flex;
+                    margin-bottom: 10px;
+                    justify-content: space-between;
+                    padding-left: 10px;
+                    position: relative;
+                    .euro {
+                        padding-top: 15px;
+                    }
+                }
             }
         }
     }
