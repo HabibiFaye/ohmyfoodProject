@@ -47,7 +47,7 @@ body {
         position: relative;
         bottom: 45px;
         box-shadow: 1px 1px 1px 2px #f2f2f2;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
         .btn {
             width: 150px;
             height: 50px;
@@ -60,10 +60,12 @@ body {
             margin-top: 20px;
         }
         .bloc__section {
-            display: flex;
-            justify-content: space-evenly;
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-column-gap: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
             .entree {
-                width: 30%;
                 .titre {
                     border-bottom: 3px solid #000;
                     width: 30px;
@@ -75,7 +77,7 @@ body {
                     border-radius: 20px;
                     box-shadow: 1px 1px 2px 1px #f6f6f6;
                     display: flex;
-                    margin-bottom: 10px;
+                    margin-bottom: 15px;
                     justify-content: space-between;
                     padding-left: 10px;
                     position: relative;
@@ -83,6 +85,31 @@ body {
                         padding-top: 15px;
                     }
                 }
+            }
+        }
+    }
+    footer {
+        background: rgb(51, 50, 50);
+        display: flex;
+        flex-direction: column;
+        color: white;
+        width: 100%;
+        padding-left: 30px;
+        .footer {
+            display: grid;
+            grid-column-gap: 30px;
+            grid-template-columns: 25% 25% 35%;
+            .footer--box {
+                display: flex;
+                align-items: center;
+            }
+            .footer--box_ {
+                display: grid;
+                grid-column-gap: 50px;
+                grid-template-columns: 40% 40%;
+            }
+            .fa-footer {
+                margin-right: 10px;
             }
         }
     }

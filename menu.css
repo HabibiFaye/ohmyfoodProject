@@ -37,7 +37,7 @@ body {
     position: relative;
     bottom: 45px;
     box-shadow: 1px 1px 1px 2px #f2f2f2;
-    padding-bottom: 30px; }
+    padding-bottom: 20px; }
     body section .btn {
       width: 150px;
       height: 50px;
@@ -49,25 +49,46 @@ body {
       font-weight: bolder;
       margin-top: 20px; }
     body section .bloc__section {
-      display: flex;
-      justify-content: space-evenly; }
-      body section .bloc__section .entree {
-        width: 30%; }
-        body section .bloc__section .entree .titre {
-          border-bottom: 3px solid #000;
-          width: 30px;
-          padding-bottom: 5px;
-          border-color: #99E2D0; }
-        body section .bloc__section .entree .entree--blocEntree {
-          background: white;
-          border-radius: 20px;
-          box-shadow: 1px 1px 2px 1px #f6f6f6;
-          display: flex;
-          margin-bottom: 10px;
-          justify-content: space-between;
-          padding-left: 10px;
-          position: relative; }
-          body section .bloc__section .entree .entree--blocEntree .euro {
-            padding-top: 15px; }
+      display: grid;
+      grid-template-columns: 2fr 2fr 2fr;
+      grid-column-gap: 10px;
+      padding-left: 10px;
+      padding-right: 10px; }
+      body section .bloc__section .entree .titre {
+        border-bottom: 3px solid #000;
+        width: 30px;
+        padding-bottom: 5px;
+        border-color: #99E2D0; }
+      body section .bloc__section .entree .entree--blocEntree {
+        background: white;
+        border-radius: 20px;
+        box-shadow: 1px 1px 2px 1px #f6f6f6;
+        display: flex;
+        margin-bottom: 15px;
+        justify-content: space-between;
+        padding-left: 10px;
+        position: relative; }
+        body section .bloc__section .entree .entree--blocEntree .euro {
+          padding-top: 15px; }
+  body footer {
+    background: #333232;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    padding-left: 30px; }
+    body footer .footer {
+      display: grid;
+      grid-column-gap: 30px;
+      grid-template-columns: 25% 25% 35%; }
+      body footer .footer .footer--box {
+        display: flex;
+        align-items: center; }
+      body footer .footer .footer--box_ {
+        display: grid;
+        grid-column-gap: 50px;
+        grid-template-columns: 40% 40%; }
+      body footer .footer .fa-footer {
+        margin-right: 10px; }
 
 /*# sourceMappingURL=menu.css.map */
